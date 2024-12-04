@@ -1,0 +1,962 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 135px;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo{
+  margin-left: 150px;
+}
+
+.arrow .left-arrow,.right-arrow{
+  color: white !important;
+}
+
+
+
+.line-display{
+  display: flex !important;
+
+}
+
+.logo {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-image {
+  width: 80.8588x;
+  height: 78.9057px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  margin-right: 223px;
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  gap: 90px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav-links .button {
+  background-color: #0452a5;
+  color: white;
+  padding: 8px 20px;
+  box-shadow: 9px 10px 12px rgba(0, 0, 0, 0.307);
+  padding-bottom: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero {
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  margin-top: -80px;
+  
+  padding: 0 160px;
+}
+
+.heros{
+  z-index: -2;
+  position: relative;
+  background-image: url("./images/image1.png");
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.763); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 37%; /* Ensure content stays on the left */
+  color: #333;
+}
+
+.hero-content h1 {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+  font-weight: 800;
+  font-style: italic;
+}
+.hero-content .highlights{
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.primary-button {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #0452a5;
+  color: rgb(243, 247, 248);
+  padding: 10px 80px;
+padding-bottom: 37px !important;
+  font-size: 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.primary-button span{
+  font-size: 35px;
+  margin-left: 7px;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+}
+
+.hero-arrow {
+  position: relative;
+  z-index: 2;
+  font-size: 4rem; /* Size of the arrow */
+  color: #333;
+  cursor: pointer;
+}
+
+
+
+.footer{
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  color: black;
+  z-index: 100;
+bottom: 45px;
+}
+.footer span{
+  font-size: 13.5px;
+}
+
+
+
+
+.second-container{
+  padding:90px 150px
+}
+
+.spacio-display{
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.spacio-line{
+  width: 4px;
+  height: 120px;
+  border-radius: 40px;
+  margin-right: 20px;
+  background-color: red;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-top: -30px;
+  margin-right: 100px;
+  width: 100%;
+  }
+
+.second-container  p {
+  margin-bottom: 1rem;
+}
+
+.rightup-arrow{
+  font-size: 70px;
+}
+
+h4 {
+  display: flex;
+  text-transform:uppercase;
+  justify-content: space-around;
+  align-items: center;
+  height: 62px;
+  width: 606px;
+  margin-right: 500px;
+  margin-top: 210px !important;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 25px;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  box-shadow: 17px 16px 20px rgba(0, 0, 0, 0.537);
+}
+
+.innovation-style{
+  text-decoration: underline;
+  font-style: italic;
+}
+/* .
+
+
+
+arrow{
+  margin-right: 10px;
+} */
+
+.innovation-cart{
+  display: flex;
+  justify-content: baseline;
+}
+
+.footerr{
+  margin-top: 50px;
+  text-align: center;
+  text-align: center;
+}
+
+
+.third-container{
+  margin-top: -70px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative;
+  background: url("./images/SpacioTechTonicsConsultancyV21.png");
+}
+
+
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  font-size: 68px;
+}
+
+.left-arrow{
+  font-size: 80px;
+  font-weight: bolder;
+  margin-left: 140px;
+}
+.right-arrow{
+  font-size: 80px;
+  font-weight: bolder;
+  margin-right: 130px;
+}
+
+.third-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -200px;
+  color: white;
+}
+.third-text h1{
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+}
+
+.footerrr{
+  margin-top: 50px;
+
+  text-align: center;
+  text-align: center;
+
+}
+.fourth-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between; /* Ensure the text is on the left and the image is on the right */
+  width: 100%;
+  height: 100vh;
+  padding: 0 50px; /* Add padding for spacing around the content */
+  box-sizing: border-box;
+  align-items: center; /* Vertically center content */
+}
+
+.spac-h1 {
+  flex: 1; /* Take up equal space */
+  max-width: 50%; /* Limit the text section to half of the container */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text block to the left */
+  justify-content: center; /* Center content vertically within its container */
+  margin-left: 30px; /* Optional: Adjust for better spacing */
+}
+
+img {
+  flex: 1; /* Take up equal space */
+  max-width: 45%; /* Ensure the image doesn't exceed 45% width */
+  object-fit: contain; /* Ensure the map is properly scaled */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.fourth-line {
+  width: 4px;
+  margin-top: 30px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 20px;
+  background-color: red;
+}
+
+.spac-h1 h1 {
+  font-size: 40px;
+}
+
+.spac-h1 div p {
+  color: black;
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+ul li {
+  font-size: 20px;
+  color: black;
+}
+
+.spac-h1 p {
+  margin-top: 10px; /* Add spacing between the heading and the paragraph */
+}
+
+.fouth-main{
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-container {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  width: 520px;
+  padding: 20px 30px;
+  margin-left: 20px;
+  gap: 30px;
+  background-color: white;
+  border-radius: 35px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.stat {
+  text-align: center;
+  flex: 1; /* Equal width for all stats */
+  position: relative;
+}
+
+.stat h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.stat p {
+  font-size: 12px !important;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.right-arroww{
+font-size: 18px;
+margin-right: 30px;
+font-weight: bold;
+}
+
+.viewall{
+  margin-left: 900px;
+}
+
+.work-display{
+ display: flex;
+align-items: center;
+}
+.third-line{
+  width: 4px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: red;
+  margin-right: 10px;
+
+}
+
+.work-header{
+  display: flex;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+.latest-work{
+}
+
+.images{
+  display: flex;
+  padding: 20px 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-inside{
+margin-top: -35px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.insights{
+  padding: 10px 100px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin: 20px 0 10px 20px;
+}
+
+h2 .highlight {
+  color: red;
+  margin-right: 10px;
+}
+
+/* Carousel Styles */
+.carousel {
+  display: flex;
+  height: 245px;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  width: 70%;
+  margin-right: 140px;
+  height: 260px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.card {
+  box-shadow: 14px 15px 25px rgba(0, 0, 0, 0.34);
+  width: 330px;
+  height: 100%;
+  flex: 0 0 30%;
+  background: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0 20px;
+
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+.card .icon {
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.card .date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Navigation Arrows */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  padding: 0 10px;
+  user-select: none;
+}
+
+.arrow.left {
+  position: absolute;
+  left: 15px;
+  font-size: 70px;
+}
+
+.arrow.right {
+  position: absolute;
+  right: -1300px;
+  font-size: 70px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.AEC{
+  margin-top: 100px;
+    display: flex;
+    text-align: center;
+    width: 80%;
+    gap: 126px;
+    font-weight: bold;
+  font-size: 20px;
+    margin-left: 189px;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.AEC span{
+  
+  text-align: end;
+  display: block;
+}
+
+
+
+
+.last-div{
+  background-image: url("./images/SpacioTechTonicsConsultancyV21.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+
+}
+
+.last-div nav{
+  height: 40px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 100px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.067);
+}
+.last-div nav .logo-section{
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0px 12px;
+}
+.logo-section h1{
+  margin-left: 20px;
+}
+.nav-link {
+  display: flex;
+  margin-right: 300px;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.nav-link span{
+  margin-left: 40px;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+.nav-link h5{
+margin-left: 20px;
+font-size: 23px;
+color: white;
+}
+
+
+
+.logo-section img{
+  width: 77px;
+  height: 80px;
+}
+
+
+.lastdiv-header{
+  color: white;
+  margin-top: 100px;
+  margin-left: 160px;
+font-size: 40px;
+}
+
+.lastdiv-header p{
+font-size: 20px;
+color: white;
+font-weight: bold;
+}
+
+
+.lastdiv-header h6{
+  font-size: 20px;
+}
+h6 span{
+  text-decoration: underline;
+  font-style: italic;
+}
+
+
+.lastdiv-header-second{
+  margin-left: 950px;
+  margin-top: -200px;
+  color: white;
+}
+
+.lastdiv-header-second h1{
+font-size: 45px;
+}
+
+.lastdiv-input{
+  margin-left: 950px;
+  align-items: center;
+  display: flex;
+}
+
+.lastdiv-input input{
+  padding: 10px 25px;
+  border: 2px solid white;
+  background:none;
+  border-radius: 10px;
+color: white;
+}
+
+.lastdiv-input button{
+  margin-left: 20px;
+border: none;
+background-color: white;
+color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 20px;
+padding: 7px 19px;
+border-radius: 20px;
+
+}
+
+
+.lastdiv-header div{
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+}
+
+.lastdiv-header img{
+  border-radius: 20px;
+  width: 50px;
+  height: 40px;
+  margin-left: -200px;
+}
+
+
+.footers{
+  
+  width: 100%;
+  background-color: #000;
+
+}
+
+.footers div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.footers img{
+  width: 77px;
+  margin-right: 40px;
+}
+
+.footer-logo{
+  flex-direction: column;
+  color: white;
+display: flex;
+justify-content: space-between;
+}
+
+.footer-logo{
+  display: block;
+}
+
+
+
+.last-div footer{
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold;
+}
+
+
+.company{
+  display: flex;
+  justify-content: space-around;
+}
+
+.company-link p{
+  font-size: 20px;
+  color: white;
+}
+
+ul {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+ .footers ul li{
+  font-size: 14px;
+  color: rgb(124, 120, 120) !important;
+list-style: none;
+margin-top: 5px;
+}
+
+.footers h1{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 12px 2%;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 10px 5%;
+  }
+
+  .hero-content {
+    max-width: 80%;
+    font-size: 1.1rem;
+  }
+
+  .primary-button {
+    padding: 10px 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    padding: 10px 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .primary-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* For Small Devices */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .primary-button {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}
+
+/* JavaScript for Menu Toggle */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 15px; /* Smaller gap for mobile view */
+  }
+}
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .primary-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
